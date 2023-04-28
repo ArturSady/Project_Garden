@@ -14,7 +14,7 @@ public class Tree {
     private String tree6 = "Dąb";
     private String randomTree;
     private int amountFruit;
-public void init(){
+public void addTreeToList(){
     trees.add(tree1);
     trees.add(tree2);
     trees.add(tree3);
@@ -32,7 +32,7 @@ public int getRandomAmountFruit(){
     }
 
     public String getRandomTree(){
-    init();
+    addTreeToList();
     int index = random.nextInt(trees.size());
     return trees.get(index);
 
