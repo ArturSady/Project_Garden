@@ -25,10 +25,20 @@ public void addTreeToList(){
 public int getRandomAmountFruit(){
     return random.nextInt(100) * 10;
 }
+public void fruitingTree(){
+    amountFruit += random.nextInt(100);
+}
+public void pickFruit(){
+    System.out.println("Zebrałeś " + amountFruit + " owoców");
+    amountFruit = 0;
+
+}
+
 
     public Tree() {
         amountFruit = getRandomAmountFruit();
         randomTree = getRandomTree();
+        trees.add(randomTree);
     }
 
     public String getRandomTree(){
