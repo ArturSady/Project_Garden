@@ -5,12 +5,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> tricks = new ArrayList<>();
+       // List<String> tricks = new ArrayList<>();
         List<Flower> flowers = new ArrayList<>();
-        tricks.add("Daj głos");
-        tricks.add("Daj łape");
-        tricks.add("Pies zdechł");
-        tricks.add("Siad");
+//        tricks.add("Daj głos");
+//        tricks.add("Daj łape");
+//        tricks.add("Pies zdechł");
+//        tricks.add("Siad");
         Tree tree1 = new Tree();
 
         System.out.println(tree1);
@@ -25,11 +25,12 @@ public class Main {
         System.out.println();
 
 
-
-        Dog dog = new Dog("Burek", tricks);
+        System.out.println("*************");
+        Dog dog = new Dog("Burek");
         System.out.println(dog);
-        dog.play(tricks);
+        dog.play();
         System.out.println();
+        System.out.println("************");
 
         Flower flower1 = new Flower("Róża", FlowerColor.CZERWONY);
         System.out.println(flower1);
@@ -49,6 +50,24 @@ public class Main {
         Garden garden = new Garden(bench, flowers, 5, dog);
         System.out.println();
         System.out.println(garden);
+        System.out.println();
+        garden.goToGarden();
+        System.out.println("********");
+
+        Garden garden1 = new Garden(bench, flowers, 2);
+        garden1.goToGarden();
+        System.out.println("*****");
+
+        System.out.println(garden1);
+        garden1.waterTheFlowers();
+        System.out.println();
+        System.out.println(garden1);
+        System.out.println("************");
+        garden1.outOfGarden();
+        System.out.println(garden1);
+
+
+
 
     }
 }

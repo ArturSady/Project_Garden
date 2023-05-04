@@ -28,10 +28,11 @@ public int getRandomAmountFruit(){
 public void fruitingTree(){
     amountFruit += random.nextInt(100);
 }
-public void pickFruit(){
+public int pickFruit(){
+    int pickedFruit = amountFruit;
     System.out.println("Zebrałeś " + amountFruit + " owoców");
-    amountFruit = 0;
-
+     amountFruit = 0;
+     return pickedFruit;
 }
 
 

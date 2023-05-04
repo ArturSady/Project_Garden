@@ -28,6 +28,9 @@ public class Flower {
     public void blooms(){
         bloom = true;
     }
+    public void stopBlooms(){
+        bloom = false;
+    }
 
     @Override
     public String toString() {
